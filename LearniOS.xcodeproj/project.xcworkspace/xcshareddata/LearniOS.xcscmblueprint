@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0240F51FD5B73CB5F2E7F26DD0D408C0ABA27E5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DBB58530624543AE86153317D7F03F91FDB56BF9" : 9223372036854775807,
+    "0240F51FD5B73CB5F2E7F26DD0D408C0ABA27E5C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B9F6B7C0-CB18-445B-BEC9-E0169F771589",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DBB58530624543AE86153317D7F03F91FDB56BF9" : "",
+    "0240F51FD5B73CB5F2E7F26DD0D408C0ABA27E5C" : "LearniOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LearniOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LearniOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Amar-DRS\/LearniOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0240F51FD5B73CB5F2E7F26DD0D408C0ABA27E5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Amar-DRS\/Repo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBB58530624543AE86153317D7F03F91FDB56BF9"
+    }
+  ]
+}
