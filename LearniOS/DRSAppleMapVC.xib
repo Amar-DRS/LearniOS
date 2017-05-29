@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10115" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DRSAppleMapVC">
+            <connections>
+                <outlet property="MapApple" destination="Xd4-hH-7O4" id="LfV-Ut-eHP"/>
+                <outlet property="getCurrentLocation" destination="xWs-fE-y2D" id="A23-Kh-xaT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xd4-hH-7O4">
+                    <rect key="frame" x="0.0" y="175" width="320" height="393"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="393" id="CQh-lY-e6e"/>
+                    </constraints>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWs-fE-y2D">
+                    <rect key="frame" x="96" y="99" width="129" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="Obu-IC-TcO"/>
+                    </constraints>
+                    <state key="normal" title="Get Location"/>
+                    <connections>
+                        <action selector="getCurrentLocation:" destination="-1" eventType="touchUpInside" id="hdI-3X-9OQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xd4-hH-7O4" secondAttribute="bottom" id="0eh-Pd-tfB"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="99" id="2f1-K5-4UY"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="96" id="Fm4-51-rEO"/>
+                <constraint firstAttribute="trailing" secondItem="xWs-fE-y2D" secondAttribute="trailing" constant="95" id="HGK-X9-qlL"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="99" id="KUA-RH-bUj"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="96" id="LVC-GX-3Dw"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MHE-0U-0bZ"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="centerX" secondItem="Xd4-hH-7O4" secondAttribute="centerX" id="NaF-a8-BxP"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SHQ-et-Tf9"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="top" secondItem="xWs-fE-y2D" secondAttribute="bottom" constant="46" id="Tk5-lV-eSI"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YwQ-jx-Hax"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZrA-fi-G1q"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cEW-4a-q0t"/>
+                <constraint firstAttribute="trailing" secondItem="Xd4-hH-7O4" secondAttribute="trailing" id="dkN-9b-kxD"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="fMP-Mr-etx"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="99" id="fke-4f-5Py"/>
+                <constraint firstAttribute="trailing" secondItem="Xd4-hH-7O4" secondAttribute="trailing" id="ftQ-VM-frd"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hlZ-Kq-oJ9"/>
+                <constraint firstItem="Xd4-hH-7O4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="175" id="is2-Jc-OYy"/>
+                <constraint firstItem="xWs-fE-y2D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="96" id="izb-vv-ao3"/>
+                <constraint firstAttribute="bottom" secondItem="Xd4-hH-7O4" secondAttribute="bottom" id="vik-oM-K5c"/>
+            </constraints>
+            <point key="canvasLocation" x="325" y="257"/>
+        </view>
+    </objects>
+</document>

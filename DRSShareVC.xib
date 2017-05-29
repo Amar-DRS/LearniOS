@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DRSShareVC">
+            <connections>
+                <outlet property="GoogleShare" destination="LDm-ap-8Dw" id="4Hs-Ti-Gp4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-ap-8Dw">
+                    <rect key="frame" x="63" y="169" width="474" height="30"/>
+                    <state key="normal" title="SHARE ON GOOGLE PLUS"/>
+                    <connections>
+                        <action selector="GoogleShare:" destination="-1" eventType="touchUpInside" id="EaZ-er-5lN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9L-In-fd6">
+                    <rect key="frame" x="63" y="222" width="474" height="30"/>
+                    <state key="normal" title="SHARE ON TWITTER"/>
+                    <connections>
+                        <action selector="TwitterShare:" destination="-1" eventType="touchUpInside" id="UGT-aZ-fbh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-pE-y0U">
+                    <rect key="frame" x="73" y="401" width="474" height="30"/>
+                    <state key="normal" title="SHARE ON GOOGLE MAP"/>
+                    <connections>
+                        <action selector="GoogleMapShare:" destination="-1" eventType="touchUpInside" id="lD3-tH-4Ka"/>
+                        <action selector="TwitterShare:" destination="-1" eventType="touchUpInside" id="LXW-7o-Vyw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWR-tN-9en">
+                    <rect key="frame" x="63" y="278" width="474" height="30"/>
+                    <state key="normal" title="SHARE ON WHATSAPP"/>
+                    <connections>
+                        <action selector="WHatsAppShare:" destination="-1" eventType="touchUpInside" id="Iu4-Rd-Tgx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46s-yD-lpa">
+                    <rect key="frame" x="63" y="334" width="474" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="SHARE ON LINKEDIN"/>
+                    <connections>
+                        <action selector="LinkedinShare:" destination="-1" eventType="touchUpInside" id="2tq-tc-xsT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoA-gK-whu">
+                    <rect key="frame" x="63" y="108" width="474" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.78098087199999999" blue="0.1858697104" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="SHARE ON FACEBOOK"/>
+                    <connections>
+                        <action selector="FBShare:" destination="-1" eventType="touchUpInside" id="sxL-yQ-LlF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES" image="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="JoA-gK-whu" firstAttribute="leading" secondItem="LDm-ap-8Dw" secondAttribute="leading" id="2qO-e2-FIV"/>
+                <constraint firstItem="TWR-tN-9en" firstAttribute="trailing" secondItem="46s-yD-lpa" secondAttribute="trailing" id="Ayc-sx-Y36"/>
+                <constraint firstItem="LDm-ap-8Dw" firstAttribute="trailing" secondItem="r9L-In-fd6" secondAttribute="trailing" id="GlT-Mj-HMs"/>
+                <constraint firstItem="JoA-gK-whu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IFn-bw-rUu"/>
+                <constraint firstItem="LDm-ap-8Dw" firstAttribute="leading" secondItem="r9L-In-fd6" secondAttribute="leading" id="L3Z-x1-Aw9"/>
+                <constraint firstItem="r9L-In-fd6" firstAttribute="leading" secondItem="TWR-tN-9en" secondAttribute="leading" id="Vlx-QQ-4qy"/>
+                <constraint firstAttribute="trailing" secondItem="cUx-pE-y0U" secondAttribute="trailing" constant="53" id="cPj-eC-5PF"/>
+                <constraint firstItem="TWR-tN-9en" firstAttribute="leading" secondItem="46s-yD-lpa" secondAttribute="leading" id="dtE-Z3-2t3"/>
+                <constraint firstItem="r9L-In-fd6" firstAttribute="trailing" secondItem="TWR-tN-9en" secondAttribute="trailing" id="dvj-X7-apf"/>
+                <constraint firstItem="TWR-tN-9en" firstAttribute="top" secondItem="r9L-In-fd6" secondAttribute="bottom" constant="26" id="ghd-LS-xxl"/>
+                <constraint firstItem="cUx-pE-y0U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="73" id="jvd-H1-BXJ"/>
+                <constraint firstItem="JoA-gK-whu" firstAttribute="trailing" secondItem="LDm-ap-8Dw" secondAttribute="trailing" id="lxl-L5-bGT"/>
+                <constraint firstItem="r9L-In-fd6" firstAttribute="top" secondItem="LDm-ap-8Dw" secondAttribute="bottom" constant="23" id="ohX-i9-U2k"/>
+                <constraint firstItem="LDm-ap-8Dw" firstAttribute="top" secondItem="JoA-gK-whu" secondAttribute="bottom" constant="31" id="rNe-73-Hve"/>
+                <constraint firstItem="JoA-gK-whu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="svN-05-WDg"/>
+                <constraint firstItem="JoA-gK-whu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="63" id="vEx-Am-N3i"/>
+                <constraint firstItem="46s-yD-lpa" firstAttribute="top" secondItem="TWR-tN-9en" secondAttribute="bottom" constant="26" id="vgD-HT-sa3"/>
+                <constraint firstItem="cUx-pE-y0U" firstAttribute="top" secondItem="46s-yD-lpa" secondAttribute="bottom" constant="37" id="w2K-Jl-qdD"/>
+            </constraints>
+            <point key="canvasLocation" x="325" y="215"/>
+        </view>
+    </objects>
+</document>
